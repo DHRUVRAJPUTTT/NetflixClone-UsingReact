@@ -1,4 +1,8 @@
 # React + Vite
+<<<<<<< HEAD
+=======
+The link for Project Server : http://localhost:5173/
+>>>>>>> 74eb759dbff8a3da9977e5b31536d0fc1569cad3
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
