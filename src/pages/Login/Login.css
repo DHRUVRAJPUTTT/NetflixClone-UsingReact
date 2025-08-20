@@ -11,7 +11,7 @@ login-lgo {
 .login-form {
     width: 100%;
     max-width: 450px;
-    background: rgba(0, 0green, 0blue, 0.75alpha);
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     padding: 60px;
     margin: auto;
@@ -74,4 +74,14 @@ login-lgo {
 .remember input {
     width: 18px;
     height: 18px;
+}
+.form-switch{
+    margin-top: 40px;
+    color: #737373;
+}
+.form-switch span{
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
 }
