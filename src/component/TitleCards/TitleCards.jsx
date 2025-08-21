@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './TitleCards.css';
+import { Link } from 'react-router-dom';
 
 const TitleCards = ({ title, category }) => {
   const [apiData, setApiData] = useState([]);
@@ -41,10 +42,10 @@ const TitleCards = ({ title, category }) => {
         {apiData.map((card) => {
           // Using card.id for a more reliable key and checking if backdrop_path exists
           return (
-            <div className="card" key={card.id}>
+            <Link to={`/player/${card.id}`} className="card" key={card.id}>
               <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt={card.original_title} />
               <p>{card.original_title}</p>
-            </div>
+            </Link>
           );
         })}
       </div>
