@@ -1,16 +1,26 @@
-# React + Vite
-<<<<<<< HEAD
-=======
-The link for Project Server : http://localhost:5173/
->>>>>>> 74eb759dbff8a3da9977e5b31536d0fc1569cad3
+Netflix Clone - A React.js Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a feature-rich clone of the popular streaming service Netflix, built with modern web technologies. It showcases a dynamic and responsive user interface, user authentication, and real-time data fetching from The Movie Database (TMDB) API.
 
-Currently, two official plugins are available:
+Live Demo: http://localhost:5173/ (Note: This is a local development link. Replace with your deployed project URL.)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+This project was built using the following technologies:
 
-## Expanding the ESLint configuration
+Frontend:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React.js - A JavaScript library for building user interfaces.
+
+React Router - For client-side routing and navigation.
+
+Backend & Database:
+
+Firebase - Used for user authentication and backend services.
+
+API:
+
+The Movie Database (TMDB) API - To fetch movie and TV show data, including posters, backdrops, and trailers.
+
+Styling:
+
+CSS - Custom CSS for styling components to match the Netflix aesthetic.
