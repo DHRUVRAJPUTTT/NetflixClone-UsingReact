@@ -68,4 +68,7 @@ cursor: pointer;
     .nav-profile:hover .dropdown{
         display: block;
     }
+    .nav-dark{
+        background: #141414;
+    }
 

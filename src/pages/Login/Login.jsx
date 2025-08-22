@@ -1,8 +1,25 @@
 import React, { useState } from 'react'
 import './Login.css'
 import logo from '../../assets/logo.png'
+import { login, signup } from '../../firebase'
 const Login = () => {
-  const [signState, setSignState] = useState("Sign In")
+
+  const [signState, setSignState] = useState("Sign In");
+  const [ name , setName ] = useState("");
+   const [ email , setEmail ] = useState("");
+    const [ password , setPassword ] = useState("");
+
+    /* creating a function for user authentication  */
+    const user_auth = async (event)=>{
+      event.preventDefault();
+      if(signState==="Sign In"){
+        await login(email,password);
+      }
+      else{
+        await signup(name , email , password);
+      }
+    }
+
  { /*Importing useState from React Library*/}
   return (
     <div className='login'>
@@ -11,14 +28,17 @@ const Login = () => {
         <h1>{signState}</h1>
         <form >
          { /*Adding the feature that remove Your name placeholder if the state is sign in  */}
-          {signState === "Sign Up"? <input type="text" placeholder='Your Name' /> : <></>}
+          {signState === "Sign Up"? 
+          <input value={name} onChange={(e)=>{setName(e.target.value)}} 
+          type="text" placeholder='Your Name' /> : <></>}
          
-          <input type="email" placeholder='Email' />
-          <input type="password" placeholder='Password' />
+          <input  value={email} onChange={(e)=>{setEmail(e.target.value)}} type="email" placeholder='Email' />
+          <input  value={password} onChange={(e)=>{setPassword(e.target.value)}}  type="password" placeholder='Password' />
           {/*We need to put signState in curly braces because 
            anything inside tags is treated as a regular string 
            unless you wrap it in curly braces*/}
-          <button>{signState}</button>
+
+          <button onClick={user_auth} type='submit'>{signState}</button>
           <div className="form-help">
             <div className="remember">
               <input type="checkbox" />
