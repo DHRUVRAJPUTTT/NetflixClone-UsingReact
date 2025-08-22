@@ -4,8 +4,7 @@ This project is a feature-rich clone of the popular streaming service Netflix, b
 
 Live Demo: http://localhost:5173/ (Note: This is a local development link. Replace with your deployed project URL.)
 
-Tech Stack
-This project was built using the following technologies:
+Tech Stack =>
 
 Frontend:
 
@@ -15,7 +14,7 @@ React Router - For client-side routing and navigation.
 
 Backend & Database:
 
-Firebase - Used for user authentication and backend services.
+FireBase - Used for user authentication and backend services.
 
 API:
 
